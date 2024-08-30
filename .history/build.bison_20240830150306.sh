@@ -19,6 +19,7 @@ make install
 cd ..
 rm --recursive --force m4-$M4_VERSION
 
+# Build bison
 wget --no-check-certificate https://ftp.gnu.org/gnu/bison/bison-$BISON_VERSION.tar.xz
 verify_checksum bison-$BISON_VERSION.tar.xz $BISON_SHA256SUM
 
