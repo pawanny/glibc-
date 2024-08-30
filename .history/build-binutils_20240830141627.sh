@@ -24,6 +24,4 @@ cd binutils-$VERSION
 --disable-nls
 
 make 
-make install 
-cd ..
-rm -rf binutils-$VERSION
+make install

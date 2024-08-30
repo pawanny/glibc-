@@ -22,8 +22,3 @@ cd binutils-$VERSION
 --enable-64-bit-bfd \
 --enable-targest=all \
 --disable-nls
-
-make 
-make install 
-cd ..
-rm -rf binutils-$VERSION

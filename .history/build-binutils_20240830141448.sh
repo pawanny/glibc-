@@ -15,15 +15,4 @@ cd binutils-$VERSION
 
 ./configure --prefix="${PREFIX}" \
 --enable-deterministic-archives \
---prefix="${PREFIX}" \
---disable-werror \
---enable-interwork \
---enable-multilib \
---enable-64-bit-bfd \
---enable-targest=all \
---disable-nls
-
-make 
-make install 
-cd ..
-rm -rf binutils-$VERSION
+--prefix="${PREFIX}"
