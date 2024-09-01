@@ -20,6 +20,7 @@ gcc_cv_prog_makeinfo_modern=no
 mkdir build
 cd build
 
+# Disable everything that isn't needed to build glibc.
 ../configure \
   --prefix="${PREFIX}" \
   --enable-languages="c,c++" \

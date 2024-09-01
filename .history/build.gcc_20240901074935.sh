@@ -13,6 +13,7 @@ verify_checksum gcc-$VERSION.tar.xz $SHA256SUM
 tar --extract --file gcc-$VERSION.tar.xz
 cd gcc-$VERSION
 
+# Download GCC support libraries
 ./contrib/download_prerequisites
 
 gcc_cv_prog_makeinfo_modern=no
@@ -20,6 +21,7 @@ gcc_cv_prog_makeinfo_modern=no
 mkdir build
 cd build
 
+# Disable everything that isn't needed to build glibc.
 ../configure \
   --prefix="${PREFIX}" \
   --enable-languages="c,c++" \
